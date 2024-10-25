@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+.nav{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.253)),url("image/bg.jpeg") ;
+    background-size: 100% 700px;
+    background-size: 100%;
+    
+}
+.logo .menu-icon{
+    display: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+    filter: brightness(230%);
+    
+}
+.menu .Link{
+    display: flex;
+    list-style-type: none;
+}
+.menu .Link li {
+    width: 135px;
+    text-align: center;
+}
+.menu .Link li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+}
+.date{
+    width: 50%;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(252, 252, 252);
+  margin-top: 100px;
+  margin-left: 50px;
+}
+@media (max-width:750px){
+    .nav{
+        background-repeat: no-repeat;
+        height: 410px;
+    }
+    .date h1{
+        margin-top: -80px;
+        margin-left: -20px;
+        font-size: 52px;
+    }
+    .menu .Link{
+        width: 100%;
+    }
+    .nav1{
+      width: 100%;
+    }
+    .menu .Link li{
+        width: 100px;
+    } 
+}
+@media (max-width:480px) {
+    .nav{
+        background-repeat: no-repeat;
+        height: 210px;
+    }
+    .nav1{
+        display: block;
+        height: 70px;
+    }
+    .menu .Link{
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        margin-top: -30px;
+       
+    }
+    .menu .Link li{
+        width: 170%;
+    } 
+    .menu .Link li a{
+        background-color: rgba(0, 0, 0, 0.459);
+    }
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Link.active{
+        display: flex;
+        width: 100%;
+    }
+    .logo  .menu-icon{
+        display:block;}
+    
+        .date h1{
+            margin-top: -80px;
+            margin-left: -10px;
+            font-size: 28px;
+        }
+}
+/* =============== */
+.page2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about{
+    width: 40%;
+}
+.about h1{
+    cursor: pointer;
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.about p{
+    width: 80%;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+   
+}
+.abu-img{
+    width: 50%;
+
+}
+.abu-img img{
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    margin-left: 50px;
+    padding-left: 3px;
+    filter: brightness(180%);
+}
+@media (max-width:750px){
+    .page2{
+        width: 100%;
+    }
+    .about h1{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .about p{
+        font-size: 19px;
+    }
+    .abu-img img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+        border-radius: 10px;
+        margin-left: 50px;
+        padding-left: 3px;
+    }
+}
+@media (max-width:480px) {
+    .page2{
+        width: 100%;
+        display: block;
+        justify-content: center;  
+        margin: auto;
+    }
+    .about{
+        width: 100%;
+        text-align: center;
+    }
+    .about p{
+        width: 100%;
+        text-align: center;
+    }
+    .abu-img{
+        width: 100%; 
+    }
+    .about h1{
+        font-size: 30px;
+        padding-bottom: 10px;}
+
+    .about p{
+        font-size: 19px;
+    }
+    .abu-img img{
+        width: 80%;
+        border-radius: 10px;
+    }
+}
+
+/* ----------key ---- */
+.key{
+    width: 100%;
+    height:auto;
+}
+
+.key .keyhead{
+    height: 70px ;
+    width: 100%;
+}
+.key h1{
+    margin-top: 40px;
+    margin-left: 59px;
+
+    /* padding-bottom: 50px; */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.card{
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+    gap:20px;
+}
+.box{
+    height: 370px;
+    width: 90%;
+
+}
+.box img{
+    height: 250px;
+    width: 100%;
+}
+.box h4{
+    margin: 5px 0px;
+    font-family:'Raleway';
+    padding: 6px 0px;
+ 
+}
+.box p{
+    text-align: justify;
+    /* margin: 5px; */
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+@media (max-width:750px) {
+    .card{
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    gap:10px;
+}
+}
+@media (max-width:480px) 
+{
+    .card{
+    height: auto;
+    grid-template-columns: 90%;
+    justify-content: space-evenly;
+}
+.card img{
+    width: 100%;
+}
+}
+/* --------------- */
+
+.clients{
+    width: 100%;
+    height: 200px;
+    text-align: center; 
+}
+.name h1{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.name{
+    padding-bottom: 20px;
+}
+.brands{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns:  20% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width:750px){
+    .clients{
+        width: 100%;
+        height: auto;
+        text-align: center; 
+        
+    }
+    .brands{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:480px){
+    .brands{
+      
+        display: grid;
+        grid-template-columns: 90%;
+    }
+}
+/* --------------------- */
+
+.endpage{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.endpage .in h1{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+}
+.btn{
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+    width:150px;
+    padding: 10px 20px ;
+    border-radius: 15px;
+    color: dimgrey;
+    font-weight: bold;
+    border-color:2px solid dimgray;
+}
+.img3{
+    margin-top: -10px;
+}
+@media (max-width:750px){
+    .endpage{
+        width: 90%;
+        margin: 5%;
+    }
+}
+@media (max-width:480px){
+    .endpage{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .endpage h1{
+        text-align: center;
+        /* font-size: 17px; */
+    }
+    .endpage .btn{ 
+        margin-left: 150px ;
+        color: dimgrey;
+        font-weight: bold;
+        border-color: dimgray;
+    }
+    .img3{
+        margin-left: 150px;
+    }
+}
+/* -------------------- */
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgb(200, 224, 230);
+    padding-bottom: 30px;
+}
+.logo2{
+    width: 30%;
+    margin-left: 50px;
+}
+.logo2 .addimg img{
+    margin-left: -50px;
+    width: 250px;
+}
+.infor{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; 
+    padding-bottom: 30px;
+}
+.infor i{
+    font-size: 30px;
+    color: rgb(92, 91, 91);
+    margin-right: 20px;  
+}
+.icon{
+    font-size: 40px;
+    color: rgb(109, 108, 108);
+}
+.icon i{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.links{
+    margin: 30px;
+}
+.links h1{
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.menu3 .Lists{
+    margin-top: 25px;
+    list-style-type: none;
+    font-size: 25px;
+}
+.menu3 .Lists li{
+    padding: 8px;
+}
+.menu3 .Lists li a{
+    color: black;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-decoration: none;
+}
+@media (max-width:750px){
+    .logo2{
+        width: 50%;
+       
+    }
+}
+@media (max-width:480px){
+    .footer{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}
